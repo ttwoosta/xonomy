@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--
+            Xonomy xml editor
+            Author: Tu Tong
+            Date:   Mar 24, 2019
+
+            Filename: sample_editor.html
+        -->
+        
+        <title>Xonomy xml editor</title>
+        <meta charset="utf-8" />
+        <link href="xonomy.css" rel="stylesheet"  />
+        <link href="rha_styles.css" rel="stylesheet" />
+
+        <script src="jquery-3.1.0.js"></script>
+        <script src="xonomy.js"></script>
+        <script src="rha_xml_spec.js"></script>
+    </head>
+
+    <body>
+        <div class="main-container">
+            <div class="sample-container">
+                <div id="sample-editor"></div>
+            </div>
+        </div>
+
+
+<script>
+$(function() {
+    
+    var schoolXml = "<school name='Saint Tibulus&apos;s National School'><teachers><person name='Clara O&apos;Lara' sex='f'/><person name='Billybob Smythe' sex='m'/></teachers><students><person name='Mish Vargo' sex='f'/><person name='Iwanna Beer' sex='f'/><person name='Vern Lorn' sex='m'/><person name='Charlie McGillycuddy' sex='m' age='-8.5'/></students></school>";
+    var sample_editor = document.getElementById("sample-editor");
+        
+    Xonomy.render(schoolXml, sample_editor, schoolSpec);
+
+})
+</script>
+
+    </body>
+</html>
