@@ -14,15 +14,25 @@
         <meta charset="utf-8" />
         <link href="xonomy.css" rel="stylesheet"  />
         <link href="rha_styles.css" rel="stylesheet" />
+        <link href="jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet" />
 
         <script src="jquery-3.1.0.js"></script>
+        <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
         <script src="xonomy.js"></script>
         <script src="rha_xml_spec.js"></script>
         <script src="rha_loader.js"></script>
     </head>
 
     <body>
+
         <div class="main-container">
+                <p>Date: <input type="text" id="my-datepicker-2"></p>
+            <h2>Filterable Nodes</h2>
+            <p>Filter by value:   <input id="filter-by-value-input" type="text" placeholder="Filter by value.."></p>
+            <p>Filter by name:   <input id="filter-by-name-input" type="text" placeholder="Filter by name.."></p>
+            
+            <br><br>
+
             <div class="xml-container">
                 <div id="xml-editor"></div>
             </div>
